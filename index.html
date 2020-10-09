@@ -257,7 +257,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-10-09 21:53:36" itemprop="dateModified" datetime="2020-10-09T21:53:36+01:00">2020-10-09</time>
+        <time title="Modified: 2020-10-09 21:58:01" itemprop="dateModified" datetime="2020-10-09T21:58:01+01:00">2020-10-09</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -282,25 +282,25 @@
           <h2 id="Installation-of-WSL2"><a href="#Installation-of-WSL2" class="headerlink" title="Installation of WSL2"></a>Installation of WSL2</h2><p>Followed this tutorial installed WSL<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/windows/wsl/install-win10">https://docs.microsoft.com/zh-cn/windows/wsl/install-win10</a>  (Chinese)</p>
 <p>Followed this tutorial changed version to WSL2<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/144583887">https://zhuanlan.zhihu.com/p/144583887</a>  (Chinese)</p>
 <h2 id="Installation-of-X-Server-amp-ROS"><a href="#Installation-of-X-Server-amp-ROS" class="headerlink" title="Installation of X Server &amp; ROS"></a>Installation of X Server &amp; ROS</h2><p>Followed these tutorial installed X server &amp; ROS<br><a target="_blank" rel="noopener" href="https://janbernloehr.de/2017/06/10/ros-windows">https://janbernloehr.de/2017/06/10/ros-windows</a><br><a target="_blank" rel="noopener" href="http://wiki.ros.org/noetic/Installation/Ubuntu">http://wiki.ros.org/noetic/Installation/Ubuntu</a></p>
-<p>Error:</p>
+<p><strong>Error</strong>  :</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Can<span class="string">&#x27;t open display: :0</span></span><br></pre></td></tr></table></figure>
 
 <p>Solution:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> DISPLAY=`cat /etc/resolv.conf | grep nameserver | awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>`:0</span><br></pre></td></tr></table></figure>
 <p>by  <a target="_blank" rel="noopener" href="https://blog.csdn.net/dinghua4921/article/details/101731738/">https://blog.csdn.net/dinghua4921/article/details/101731738/</a>  (Chinese)</p>
-<p>Error:</p>
+<p><strong>Error</strong>  :</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Command ‘roscore‘ not found, but can be installed with: sudo apt install python-roslaunch</span><br></pre></td></tr></table></figure>
 
 <p>Solution:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ros-melodic-desktop</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>Cause: Some of the ROS files are missing and cannot be solved by indtsllinh python-roslaunch<br>by:  <a target="_blank" rel="noopener" href="https://blog.csdn.net/dinghua4921/article/details/101731738/">https://blog.csdn.net/dinghua4921/article/details/101731738/</a>  (Chinese)</p>
-<p>Error:</p>
+<p><strong>Error</strong>  :</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Segmentation fault (core dumped)</span><br></pre></td></tr></table></figure>
 
 <p>Solution:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> LIBGL_ALWAYS_INDIRECT=</span><br></pre></td></tr></table></figure>
 <p>by:  <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/115358581">https://zhuanlan.zhihu.com/p/115358581</a>  (Chinese)</p>
-<p>Result:<br><img src="images/1.png" alt="Rviz"></p>
+<p><strong>Result</strong>  :<br><img src="images/1.png" alt="Rviz"></p>
 
       
     </div>
